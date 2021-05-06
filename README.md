@@ -3,6 +3,7 @@
  * [OpenShift 4.2 vSphere Install Quickstart](https://blog.openshift.com/openshift-4-2-vsphere-install-quickstart/)
  * [Installing a cluster on vSphere](https://docs.openshift.com/container-platform/4.3/installing/installing_vsphere/installing-vsphere.html)
  * [OpenShift 4.3 installation on VMware vSphere with static IPs](https://labs.consol.de/container/platform/openshift/2020/01/31/ocp43-installation-vmware.html)
+ * [Required Privileges & Permissions](https://github.com/openshift/installer/blob/master/docs/user/vsphere/privileges.md)
 
 # Pre-Requisites
 
