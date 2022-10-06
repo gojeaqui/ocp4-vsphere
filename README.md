@@ -1,7 +1,7 @@
 # Reference Documentation:
  * [Deploying a User Provisioned Infrastructure environment for OpenShift 4.1 on vSphere](https://blog.openshift.com/deploying-a-user-provisioned-infrastructure-environment-for-openshift-4-1-on-vsphere/)
  * [OpenShift 4.2 vSphere Install Quickstart](https://blog.openshift.com/openshift-4-2-vsphere-install-quickstart/)
- * [Installing a cluster on vSphere](https://docs.openshift.com/container-platform/4.3/installing/installing_vsphere/installing-vsphere.html)
+ * [Installing a cluster on vSphere](https://docs.openshift.com/container-platform/4.4/installing/installing_vsphere/installing-vsphere.html)
  * [OpenShift 4.3 installation on VMware vSphere with static IPs](https://labs.consol.de/container/platform/openshift/2020/01/31/ocp43-installation-vmware.html)
  * [Required Privileges & Permissions](https://github.com/openshift/installer/blob/master/docs/user/vsphere/privileges.md)
 
@@ -30,10 +30,11 @@ terraform version
 
 Download and install VMware CLI
 ```
-curl -L https://github.com/vmware/govmomi/releases/download/v0.20.0/govc_linux_amd64.gz > govc_0.20.0_linux_amd64.gz
-gunzip govc_0.20.0_linux_amd64.gz
-mv govc_0.20.0_linux_amd64 /usr/local/bin/govc
+curl -L https://github.com/vmware/govmomi/releases/download/v0.29.0/govc_Linux_x86_64.tar.gz > govc_Linux_x86_64.tar.gz
+tar xfz govc_Linux_x86_64.tar.gz
+cp govc /usr/local/bin/govc
 chmod +x /usr/local/bin/govc
+chown openshift:openshift /usr/local/bin/govc
 ```
 
 Configure the CLI with the vSphere settings
